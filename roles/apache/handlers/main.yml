@@ -1,0 +1,13 @@
+---
+# handlers file for azure-vm
+- name: Reload Apache
+  service:
+    name: apache2
+    state: reloaded
+  become: yes
+
+- name: Restart Apache
+  service:
+    name: apache2
+    state: restarted
+  become: yes

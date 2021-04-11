@@ -1,0 +1,19 @@
+- name: Create document root
+  file:
+    path: "/var/www/{{ http_host }}"
+    state: directory
+    owner: "{{ app_user}}"
+    mode: '0755'
+  become: yes
+
+- name: Copy index test page
+  template:
+    src: "templates/index.html.j2"
+    dest: "/var/www/{{ http_host }}/index.html"
+  become: yes
+
+- name: Set up Apache VirtualHost
+  template:
+    src: "templates/apache.conf.j2"
+    dest: "/etc/apache2/sites-available/{{ http_conf }}"
+  become: yes

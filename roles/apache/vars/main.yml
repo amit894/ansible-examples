@@ -1,0 +1,7 @@
+---
+# vars file for apache
+app_user: "amit894"
+http_host: "amit_domain"
+http_conf: "amit_domain.conf"
+http_port: "80"
+disable_default: true

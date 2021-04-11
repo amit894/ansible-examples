@@ -1,0 +1,5 @@
+[myserver]
+40.114.111.218 ansible_user=amit894 ansible_ssh_private_key_file=/Users/a0r00wp/.ssh/personal/id_rsa
+
+[myserver1]
+40.114.111.219 ansible_user=amit894 ansible_ssh_private_key_file=/Users/a0r00wp/.ssh/personal/id_rsa
