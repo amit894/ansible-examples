@@ -1,0 +1,5 @@
+- name: azure-kubeadm
+  hosts: myserver
+  roles:
+    - role: '../roles/kube-master'
+    - role: '../roles/kube-worker'
