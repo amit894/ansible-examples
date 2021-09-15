@@ -1,0 +1,4 @@
+- name: nginx-vm
+  hosts: nginx-server
+  roles:
+    - role: '../roles/nginx'
