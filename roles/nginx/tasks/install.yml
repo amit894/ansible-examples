@@ -1,0 +1,3 @@
+- name: Install Nginx Package
+  apt: name=nginx update_cache=yes state=latest
+  become: yes

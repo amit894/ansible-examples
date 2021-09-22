@@ -1,2 +1,4 @@
 ---
 # tasks file for nginx
+- import_tasks: prereqs.yml
+- import_tasks: install.yml
