@@ -4,5 +4,5 @@
 [myserver1]
 40.114.111.219 ansible_user=azure_user ansible_ssh_private_key_file=/Users/amitraj/.ssh/id_rsa
 
-[nginx-server]
-40.114.111.219 ansible_user=azure_user ansible_ssh_private_key_file=/Users/amitraj/.ssh/id_rsa
+[nginxserver]
+20.81.46.23 ansible_user=azureuser ansible_ssh_private_key_file=/Users/amitraj/Downloads/test-ansible.pem
