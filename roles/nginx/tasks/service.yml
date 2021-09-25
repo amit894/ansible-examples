@@ -1,0 +1,17 @@
+- name: configtest before restart; fail immediately if our config is bad
+  command: service nginx configtest
+    warn=false
+
+- name: Restart Nginx
+  service:
+    name: nginx
+    state: restarted
+  become: yes
+
+
+- name: "UFW - Allow HTTP on port {{ http_port }}"
+  ufw:
+    rule: allow
+    port: "{{ http_port }}"
+    proto: tcp
+  become: yes
