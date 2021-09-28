@@ -1,7 +1,7 @@
 ---
 # vars file for nginx
 app_user: "azureuser"
-http_host: "hello_nginx"
+http_host: "html"
 http_conf: "hello_nginx.conf"
 http_port: "80"
 disable_default: true
