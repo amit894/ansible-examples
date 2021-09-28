@@ -11,9 +11,3 @@
     src: "templates/index.html.j2"
     dest: "/var/www/{{ http_host }}/index.html"
   become: yes
-
-- name: Set up Nginx VirtualHost
-  template:
-    src: "templates/nginx.conf.j2"
-    dest: "/etc/nginx/sites-enabled/{{ http_conf }}"
-  become: yes

@@ -1,6 +1,8 @@
 - name: configtest before restart; fail immediately if our config is bad
   command: service nginx configtest
     warn=false
+  become: yes
+
 
 - name: Restart Nginx
   service:
